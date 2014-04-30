@@ -1,16 +1,15 @@
 {
-  "author": "Simeon Bateman",
-  "name": "Brunch-With-Marionette",
-  "description": "MarionetteJS application template for Brunch.io",
-  "version": "0.0.2",
-  "homepage": "",
+  "author": "MRW Neundorf",
+  "name": "MTodoExample",
+  "description": "MarionetteJS application",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Naxmeify/MTodoExample",
   "repository": {
     "type": "git",
-    "url": "git@github.com/simbco/brunch-with-marionette"
+    "url": "git@github.com/Naxmeify/MTodoExample"
   },
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": "0.10.x"
   },
   "scripts": {
     "start": "brunch watch --server",
@@ -23,13 +22,14 @@
     "stylus-brunch": ">= 1.0 < 1.7",
     "handlebars-brunch": ">= 1.0 < 1.7",
     "uglify-js-brunch": ">= 1.0 < 1.7",
-    "clean-css-brunch": ">= 1.0 < 1.7"
+    "clean-css-brunch": ">= 1.0 < 1.7",
+    "brunch": "^1.7.13"
   },
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-  "license": "BSD",
+  "license": "MIT",
   "devDependencies": {
     "mocha-phantomjs": "^3.3.2",
     "phantomjs": "^1.9.7-5"
