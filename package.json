@@ -12,6 +12,7 @@
     "node": "0.10.x"
   },
   "scripts": {
+    "postinstall": "brunch b",
     "start": "brunch watch --server",
     "test": "brunch b & mocha-phantomjs -R spec public/test/index.html"
   },
