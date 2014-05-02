@@ -14,13 +14,14 @@ module.exports = class TodosView extends Backbone.Marionette.CompositeView
 
   add: ->
     console.log 'add'
-    @collection.create
-      title: @ui.input.val().trim()
+    if @ui.input.val().length > 0
+      @collection.create
+        title: @ui.input.val().trim()
 
-    @ui.input.val('')    
+      @ui.input.val('')    
 
   onInputKeypress: (event)->
     ENTER_KEY = 13;
-    if event.which is ENTER_KEY and @ui.input.val()
+    if event.which is ENTER_KEY
       @add()
     
