@@ -10,3 +10,9 @@ describe 'HomeView', ->
 
   it 'should auto-render', ->
     expect(@view.$el.find '.jumbotron').to.have.length 1
+
+  it 'should contain MTodoExample', ->
+    expect(@view.$el.find('.jumbotron').text()).to.contain 'MTodoExample'
+
+  it 'should contain mrw neundorf\'s name', ->
+    expect(@view.$el.find('.jumbotron').text()).to.contain 'MRW Neundorf'
